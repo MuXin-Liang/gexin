@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 首先自定义属性，这里我们为了简便 只自定义了这2种属性，如果你要自己做的话 看需求可以增加属性-->
+    <!-- 另外注意我们这里并没有使用declare-styleable  来包裹这里的2个属性 好处就是在xml文件里 不用另外定义前缀了-->
+    <attr name="custom_color" format="reference|color"/>
+</resources>

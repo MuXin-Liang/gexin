@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/contact_linear"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_contact_list_item_name"
+            android:textStyle="bold"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+
+            android:text="Contactor_Name"
+            />
+        <TextView
+            android:id="@+id/tv_contact_list_item_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:text="Contactor_PhoneNum"
+            />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/bt_contact_call"
+        android:scaleType="fitCenter"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:src="@drawable/call"
+        android:background="@null"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:tint="@color/grey"
+        android:layout_marginBottom="8dp"
+        android:layout_alignBottom="@+id/contact_linear"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

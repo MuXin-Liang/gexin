@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_showArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_faq_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HTC M8"
+            android:textSize="13sp"
+             />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_hideArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        >
+        <ImageView
+            android:id="@+id/img_faq_answer"
+            android:layout_width="wrap_content"
+            android:scaleType="fitCenter"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_below="@id/img_faq_answer"
+            android:id="@+id/tv_faq_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_textview"
+            android:textSize="13sp"
+            android:text="活动截止时间：" />
+
+    </RelativeLayout>
+</LinearLayout>

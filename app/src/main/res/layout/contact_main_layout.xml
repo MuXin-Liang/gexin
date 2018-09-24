@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.joe.contactor20.com.example.joe.gexin.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#20b2aa"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="50sp"
+            android:layout_height="30sp"
+            android:id="@+id/select_finish"
+            android:text="完成"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttonstyle"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+            <Button
+                android:layout_width="50sp"
+                android:layout_height="30sp"
+                android:id="@+id/select_all"
+                android:text="全选"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/buttonstyle"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/temp_layout"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_below="@id/linearlayout"
+            android:weightSum="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_search_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_edittext3"
+            android:hint="搜索"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="6dp"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:layout_marginRight="0dp"
+            >
+        </EditText>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="14dp"
+            android:id="@+id/excel_read_btn"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/excel_plus"
+            android:scaleType="fitCenter"
+            android:tint="@color/aoi"
+            android:background="@null"
+            />
+        </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_below="@id/temp_layout"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_no_contact"
+            android:layout_width="wrap_content"
+            android:text="没有联系人"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ListView
+            android:id="@+id/contactor_listview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content"></ListView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</RelativeLayout>

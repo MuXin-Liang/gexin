@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#676972"
+        android:gravity="center" >
+
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:tint="#ffffff"
+            android:background="#20b2aa"
+            android:scaleType="fitCenter"
+            android:onClick="onClick"
+            android:layout_marginLeft="2dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="新建短信"
+            android:textSize="16dp"
+            android:textColor="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="0dp"
+            android:background="#20b2aa"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/et_main_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rounded_edittext3"
+            android:ems="13"
+            android:hint="收信人"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="44dp"
+            android:inputType="phone"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+
+            >
+            <requestFocus></requestFocus>
+        </EditText>
+
+
+        <Button
+            android:id="@+id/bt_main_contact"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:background="@drawable/contactor"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="#6d6a6a"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/m_Relayout"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+
+
+
+
+        <Button
+            android:id="@+id/bt_main_send"
+            android:layout_width="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_height="30dp"
+            android:backgroundTint="#20b2aa"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/send" />
+
+        <EditText
+            android:id="@+id/et_main_content"
+            android:layout_width="match_parent"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="17dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/bt_main_send"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext2"
+            android:hint="短信"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        ></LinearLayout>
+
+</LinearLayout>

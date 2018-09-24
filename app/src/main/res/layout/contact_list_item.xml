@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <CheckBox
+        android:id="@+id/contactor_list_item_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:padding="4dp"
+        android:focusable="false"
+        />
+    <TextView
+        android:id="@+id/contactor_list_item_remarkTextview"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:paddingLeft="4dp"
+        android:paddingRight="10dp"
+        android:layout_toLeftOf="@id/contactor_list_item_checkbox"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactor_list_item_nameTextview"
+        android:layout_toLeftOf="@id/contactor_list_item_remarkTextview"
+        android:textStyle="bold"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="Contactor_Name"
+        />
+    <TextView
+        android:id="@+id/contactor_list_item_phoneNumTextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactor_list_item_nameTextview"
+        android:layout_toLeftOf="@id/contactor_list_item_checkbox"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:text="Contactor_PhoneNum"
+        />
+
+
+</RelativeLayout>

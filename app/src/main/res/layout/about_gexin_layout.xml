@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#f0efef"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center" >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="关于个信"
+            android:textSize="16dp"
+            android:textColor="#FFFFFF"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:background="#20b2aa"
+            />
+    </LinearLayout>
+
+    <TextView
+
+        android:id="@+id/tv_gexin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#aaa9a9"
+        android:text="CopyRight©2017 All Rights Reserved."
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#aaa9a9"
+        android:text="个信"
+        android:layout_above="@+id/tv_gexin"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/gexin_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cloud"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp" />
+
+    <TextView
+        android:layout_below="@id/gexin_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#aaa9a9"
+        android:gravity="center"
+        android:text="V4.3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#9d9d9d"
+        android:text="“你的个性群发小助手”"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

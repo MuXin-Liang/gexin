@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_item_remark"
+        android:title="修改备注"
+        android:orderInCategory="100"
+        ></item>
+</menu>

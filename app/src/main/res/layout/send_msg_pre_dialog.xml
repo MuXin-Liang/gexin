@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11ffffff">
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/free_dialog_bg"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageButton
+                android:id="@+id/msg_pre_pre"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@null"
+                android:src="@drawable/leftarrow"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="18dp"
+                />
+
+            <TextView
+                android:id="@+id/msg_pre_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:layout_gravity="center|center_horizontal"
+                android:text="发送至谢平"
+                android:textColor="#38ADFF"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/msg_pre_next"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/rightarrow"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="18dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/msg_pre_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textColor="#101010"
+            android:layout_marginRight="20dp"
+            android:text="提示消息" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="#E4E4E4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/msg_pre_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="取消"
+                android:textColor="#7D7D7D"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="#E4E4E4" />
+
+            <Button
+                android:id="@+id/msg_pre_confirm"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="确认发送"
+                android:textColor="#38ADFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#20b2aa"
+    android:layout_height="match_parent">
+
+
+    <TextView
+
+        android:id="@+id/tv_gexin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:text="CopyRight©2017 All Rights Reserved."
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:src="@drawable/cloud3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginStart="128dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/plane"
+        android:layout_marginBottom="30dp"
+        android:layout_alignBottom="@+id/img_icon"
+        android:layout_alignLeft="@+id/img_icon"
+        android:layout_alignStart="@+id/img_icon"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="个信"
+        android:layout_above="@+id/tv_gexin"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

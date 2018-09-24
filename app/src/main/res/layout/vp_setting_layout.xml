@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/bt_usage"
+        android:onClick="onClick"
+        android:layout_marginTop="6dp"
+        android:text="使用说明"
+        android:background="#ffffff"
+        android:textSize="15dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:alpha="0.6"
+        android:textColor="#353434"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/QandA"
+        android:layout_marginTop="6dp"
+        android:text="常见问题"
+        android:background="#ffffff"
+        android:textSize="15dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:alpha="0.6"
+        android:textColor="#353434"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/bt_about"
+        android:layout_marginTop="6dp"
+        android:text="关于个信"
+        android:background="#ffffff"
+        android:textSize="15dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:alpha="0.6"
+        android:textColor="#353434"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/bt_call_us"
+        android:layout_marginTop="6dp"
+        android:text="联系我们"
+        android:background="#ffffff"
+        android:textSize="15dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:alpha="0.6"
+        android:textColor="#353434"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+</LinearLayout>
